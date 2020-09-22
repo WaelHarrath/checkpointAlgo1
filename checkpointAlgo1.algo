@@ -1,0 +1,26 @@
+ALGORITHM sentence_reading
+VAR
+    l,w,v,i :INTEGER;
+    sent :STRING;
+BEGIN 
+ while(sent='' and sent[sent.length-1]!='.') repeat{
+	write("give me the sentence")
+	read(sent)
+	}
+FOR i FROM 0 TO sent.length<1 STEP step  DO
+
+     IF (sent[i] =' ') THEN
+        w:=w+1;
+      
+     ELSE_IF ( sent[i]='sent[i]' or sent[i]='e' or sent[i]='i' or sent[i]='o' or sent[i]='u' or sent[i]='y') THEN
+         v:=v+1;
+        ;
+     ELSE  
+         l:=l+1;
+     END_IF
+     END_FOR
+ write (sent)
+ write ( "length of the sentence :",l)
+ write ("Number or words :",w+1)
+ write("number of vowels :",v)
+END
